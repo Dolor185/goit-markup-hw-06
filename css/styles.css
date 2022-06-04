@@ -526,6 +526,7 @@ margin-top: 0;
 }
 
 .footer-input {
+  padding-left: 16px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -537,6 +538,8 @@ margin-top: 0;
 }
 
 .footer-input::placeholder{
+
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -813,11 +816,14 @@ margin-top: 0;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 10px;
+  
   color: var(--primary-text-color);
 }
+
+.request {
+  padding: 40px;
+}
+
 
 .input-request{
   width: 448px;
@@ -832,14 +838,7 @@ margin-top: 0;
 
 
 .request > .text{
-margin-top: 40px;
-margin-bottom: 12px;
-margin-left: 40px;
-
-margin-right: 40px;
-
-
-
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -847,6 +846,10 @@ margin-right: 40px;
   color: var(--primary-text-color);
 }
 .label-request{
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-top: 10px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -892,12 +895,15 @@ margin-right: 40px;
 
 .agreement {
   position: relative;
-  margin-left: 54px;
-  margin-right: 51px;
+  text-align: center;
+  padding-left: 15px;
   margin-top: 20px;
-}
+  margin-bottom: 30px;
+} 
 
 .label-agreement {
+  width: 400px;
+  position: relative;  
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -908,12 +914,12 @@ margin-right: 40px;
   color: var(--accent-color);
 }
 
-.modal-button{
-  margin-left: 165px;
-  margin-top: 30px;
-  margin-right: 163px;
-  margin-bottom: 40px;
+.modal-btn {
+  display: block;
+  text-align: center;
+}
 
+.modal-button{
   width: 200px;
   height: 50px;
 
@@ -943,7 +949,7 @@ margin-right: 40px;
 .icon-request
 {
   position: absolute;
-  top:25px;
+  top:39px;
   left: 12px;
   width: 18px;
   height: 18px;
@@ -979,7 +985,7 @@ margin-right: 40px;
   position: absolute;
   display: inline-block;
   right: calc(100% + 7px);
-  top: 5px;
+  top: 0;
   width: 16px;
   height: 15px;
   
@@ -996,11 +1002,11 @@ margin-right: 40px;
 }
 
 
-.input-agreement:checked ~ .check {
+.input-agreement:checked ~ .label-agreement .check {
   background-color: var(--accent-color);
   border-color: transparent;
 }
 
-.input-agreement:checked ~ .check .icon-check{
+.input-agreement:checked ~.label-agreement .icon-check{
   fill: var(--white-color);
 }
